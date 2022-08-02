@@ -1,0 +1,40 @@
+question = Assign and print the roll number, phone number and address of two students having names
+ "Sam" and "John" respectively by creating two objects of the class 'Student'.
+
+solution 
+#include <iostream>
+using namespace std;
+
+class Student
+{
+  int rollNo;
+  long phoneNo;
+  string address;
+
+public:
+  void setData(int r, long ph, string add)
+  {
+    rollNo = r;
+    phoneNo = ph;
+    address = add;
+  }
+
+  void getData()
+  {
+    cout << "The roll no. of the student is " << rollNo << endl;
+    cout << "The phone no of the student is " << phoneNo << endl;
+    cout << "the address of the student is " << address << endl;
+  }
+};
+
+int main(int argc, char const *argv[])
+{
+  Student sam, john;
+  sam.setData(34, 89207345556066, "b-64 dda flats rohtak pkt3");
+  sam.getData();
+  john.setData(67, 8285611445035, "paschim vihar");
+  john.getData();
+  return 0;
+}
+https://github.com/praveenkumar9767/Assign-and-print-the-roll-number-phone-number-and-address-of-two-students-having-names-Sam-and-J/commits?author=praveenkumar9767
+
